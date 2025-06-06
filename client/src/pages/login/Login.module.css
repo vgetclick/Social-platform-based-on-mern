@@ -1,0 +1,84 @@
+.authContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #c299eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.authLight {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 600px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+  border-radius: 50%;
+  animation: move 10s infinite alternate ease-in-out;
+}
+
+.authCard {
+  max-width: 400px;
+  padding: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: #fff;
+  z-index: 1;
+}
+
+.authError {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.authLabel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.authInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.authButton {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.authButton:hover {
+  background-color: #45a049;
+}
+
+.authLink {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #391886;
+  text-decoration: underline;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
